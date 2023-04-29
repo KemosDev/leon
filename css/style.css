@@ -1,0 +1,437 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --mainColor: #10cab7;
+    --secondColor: #24484f;
+    --thirdColor: #777;
+    --bgColor: #f6f6f6;
+}
+.h2{
+    height: max-content;
+    margin: 0 auto 3vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    text-transform: capitalize;
+    color: var(--mainColor);
+}
+.special-heading{
+    color: #ebeced;
+    font-size: 100px;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: -3px;
+    margin: 0;
+}
+.special-heading + p{
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: var(--thirdColor);
+    text-transform: capitalize;
+}
+header{
+    max-width: 100vw;
+    height: 7vh;
+}
+header nav{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a img.logo{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+}
+header nav .bar, header nav .list-cont .fa-circle-xmark{
+    display: none;
+}
+header nav .bar span:nth-of-type(2){
+    width: 60%;
+}
+header nav .list-cont{
+    width: 80%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 3;
+}
+header nav .list-cont ul{
+    width: 80%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header nav .list-cont ul li{
+    list-style: none;
+}
+header nav .list-cont ul li a{
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: 900;
+    color: var(--secondColor);
+    font-size: 130%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main{
+    max-width: 100vw;
+    height: max-content;
+}
+main .intro{
+    max-width: 100%;
+    height: 93vh;
+    background: linear-gradient(#0000008e, #00000070),url(../images/mountain.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .intro h1{
+    font-size: 400%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: var(--mainColor);
+    letter-spacing: .5vw;
+    word-spacing: .5vw;
+}
+main .intro p{
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    font-family: 900;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    line-height: 1.4;
+    padding: 1%;
+    letter-spacing: .1vw;
+    word-spacing: .5vw;
+}
+main .feature{
+    max-width: 100%;
+    height: max-content;
+    background-color: var(--bgColor);
+}
+main .feature .feature-cont{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 2%;
+    padding: 1%;
+}
+main .feature .feature-cont .feat{
+    padding: 1%;
+    text-align: center;
+}
+main .feature .feature-cont .feat i{
+    color: var(--mainColor);
+    margin: 3vh 0;
+}
+main .feature .feature-cont .feat h2{
+    font-size: 150%;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+    color: var(--secondColor);
+    margin-bottom: 1vh;
+}
+main .feature .feature-cont .feat p{
+    font-size: 110%;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+main .serv .serv-cont{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5vh auto;
+    padding: 1%;
+}
+main .serv .serv-cont .col{
+    width: 29%;
+}
+main .serv .serv-cont .col .srv{
+    display: flex;
+    margin-bottom: 4vh;
+}
+main .serv .serv-cont .col .srv i{
+    flex-basis: 40px;
+    margin-top: 16px;
+    color: var(--mainColor);
+}
+main .serv .serv-cont .srv .text-srv{
+    flex: 1;
+}
+main .serv .serv-cont .srv .text-srv h3{
+    font-size: 150%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: var(--secondColor);
+    text-transform: capitalize;
+    margin-bottom: 3vh;
+}
+main .serv .serv-cont .srv .text-srv p{
+    font-size: 110%;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: var(--thirdColor);
+}
+main .serv .serv-cont .image{
+    width: 30%;
+    height: 35vh;
+    box-shadow: 0 0 3px 2px var(--thirdColor);
+    position: relative;
+    border-radius: 10%;
+}
+main .serv .serv-cont .image::before{
+    content: '';
+    width: 20%;
+    height: calc(100% + 80px);
+    position: absolute;
+    top: -40px;
+    right: -8%;
+    z-index: -1;
+    background-color: var(--secondColor);
+}
+main .serv .serv-cont .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+main .port{
+    background-color: var(--bgColor);
+    padding: 1%;
+}
+main .port .port-cont{
+    width: 85%;
+    margin: 3vh auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 2%;
+}
+main .port .port-cont .card{
+    margin-top: 5vh;
+}
+main .port .port-cont .card img{
+    width: 100%;
+    height: max-content;
+    border-radius: 10% 10% 0 0;
+}
+main .port .port-cont .card .card-cont{
+    background-color: white;
+    padding: 1%;
+}
+main .port .port-cont .card .card-cont h3{
+    font-size: 150%;
+    font-weight: 800;
+    margin-bottom: 2vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+    color: var(--secondColor);
+}
+main .port .port-cont .card .card-cont p{
+    font-size: 110%;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: var(--thirdColor);
+    line-height: 1.5;
+}
+main .about{
+    padding: 1%;
+}
+main .about .about-cont{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3vh auto;
+}
+main .about .about-cont .image{
+    width: 250px;
+    height: 375px;
+    position: relative;
+    margin-top: 6vh;
+    border-radius: 10%;
+}
+main .about .about-cont .image::before{
+    content: '';
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    left: -6%;
+    top: -10%;
+    background-color: #ebeced;
+    z-index: -1;
+}
+main .about .about-cont .image::after{
+    content: '';
+    width: 30%;
+    height: 55%;
+    position: absolute;
+    top: -30px;
+    right: -40%;
+    border-left: 60px solid var(--mainColor);
+    border-bottom: 60px solid var(--mainColor);
+    z-index: -1;
+}
+main .about .about-cont .image img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10%;
+    box-shadow: 0 0 3px 2px var(--thirdColor);
+}
+main .about .about-cont .info{
+    flex-basis: calc(100% - 500px);
+}
+main .about .about-cont .info p:first-of-type{
+    font-size: 110%;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 2;
+}
+main .about .about-cont .info hr{
+    width: 50%;
+    display: inline-block;
+    border-color: var(--mainColor);
+}
+main .about .about-cont .info p:last-of-type{
+    font-size: 110%;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: var(--thirdColor);
+    line-height: 1.6;
+}
+main .contact{
+    background-color: var(--bgColor);
+    padding: 1%;
+}
+main .contact .contact-cont{
+    margin: 10vh 0;
+    text-align: center;
+}
+main .contact .contact-cont p{
+    font-size: 170%;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--secondColor);
+    text-transform: capitalize;
+}
+main .contact .contact-cont a.link{
+    display: block;
+    margin: 2.5vh 0 8vh;
+    text-decoration: none;
+    font-size: 170%;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    color: var(--mainColor);
+}
+main .contact .contact-cont .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .contact .contact-cont .social span:first-of-type{
+    display: block;
+    margin-right: 2vw;
+    font-size: 120%;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: var(--secondColor);
+}
+main .contact .contact-cont .social span:last-of-type i{
+    cursor: pointer;
+    font-size: 300%;
+}
+main .contact .contact-cont .social span:last-of-type i.fa-facebook{
+    color: #3079d9;
+}
+main .contact .contact-cont .social span:last-of-type i.fa-square-twitter{
+    margin: 0 1vw;
+    color: #22caec;
+}
+main .contact .contact-cont .social span:last-of-type i.fa-youtube{
+    color: #d00606;
+}
+footer{
+    background-color: var(--secondColor);
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130%;
+    text-transform: capitalize;
+    word-spacing: .5vw;
+}
+footer span{
+    color: var(--mainColor);
+    font-size: 140%;
+    margin: 0 .5vw;
+}
+@media (768px <= width <= 991px) {
+    main .serv .serv-cont{
+        width: 98%;
+    }
+    main .serv .serv-cont .col{
+        width: 49%; 
+    }
+    main .serv .serv-cont .image{
+        display: none;
+    }
+    main .about .about-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .about .about-cont .info{
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+@media (992px <= width < 1200px){
+    main .serv .serv-cont{
+        width: 100%;
+    }
+    main .serv .serv-cont .col{
+        width: 33%;
+    }
+    main .about .about-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .about .about-cont .image{
+        margin-top: 10vh;
+    }
+    main .about .about-cont .info{
+        margin-top: 5vh;
+        text-align: center;
+    }
+}

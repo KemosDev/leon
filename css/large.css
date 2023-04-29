@@ -1,0 +1,110 @@
+.special-heading{
+    font-size: 200px;
+}
+.special-heading + p{
+    font-size: 40px;
+    margin: -60px 0 0;
+}
+header nav ul li a{
+    font-size: 250%;
+}
+main .intro h1{
+    font-size: 700%;
+}
+main .intro p{
+    width: 750px;
+    font-size: 250%;
+    line-height: 1.8;
+    letter-spacing: .1vw;
+    word-spacing: .5vw;
+}
+main .feature .feature-cont{
+    grid-template-columns: repeat(3,30%);
+}
+main .feature .feature-cont .feat i{
+    font-size: 500%;
+}
+main .feature .feature-cont .feat h2{
+    font-size: 250%;
+}
+main .feature .feature-cont .feat p{
+    font-size: 200%;
+}
+main .serv .serv-cont .srv i{
+    font-size: 500%;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+main .serv .serv-cont .srv .text-srv{
+    margin-left: 10px;
+}
+main .serv .serv-cont .srv .text-srv h3{
+    font-size: 250%;
+    margin-top: -20px;
+}
+main .serv .serv-cont .srv .text-srv p{
+    font: 200%;
+    font-weight: 900;
+}
+main .port .port-cont{
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+main .port .port-cont .card .card-cont h3{
+    font-size: 250%;
+    
+}
+main .port .port-cont .card .card-cont p{
+    font-size: 200%;
+}
+main .about .about-cont .image{
+    width: 30%;
+    height: 5%;
+    position: relative;
+    margin-top: 6vh;
+}
+main .about .about-cont .image::before{
+    width: 20%;
+    height: 100%;
+    padding: 4vh 0;
+    top: -4vh;
+}
+main .about .about-cont .image::after{
+    content: '';
+    width: 30%;
+    height: 80%;
+    top: -30px;
+    right: -40%;
+    border-left: 100px solid var(--mainColor);
+    border-bottom: 100px solid var(--mainColor);
+}
+main .about .about-cont .image img{
+    width: 100%;
+}
+main .about .about-cont .info{
+    flex-basis: 60%;
+    margin: 6vh -5vw 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .about .about-cont .info p:first-of-type{
+    font-size: 200%;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: var(--thirdColor);
+    line-height: 2;
+}
+main .about .about-cont .info hr{
+    width: 50%;
+    display: inline-block;
+    border-color: var(--mainColor);
+    margin: 4vh 0;
+}
+main .about .about-cont .info p:last-of-type{
+    font-size: 200%;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: var(--thirdColor);
+    line-height: 1.6;
+}
